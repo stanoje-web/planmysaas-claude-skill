@@ -1,6 +1,6 @@
-# Stage 4 — System architecture
+# Stage 6 — System architecture
 
-Generate `./planmysaas-blueprint/04-architecture.md`. Read prior stages.
+Generate `./planmysaas-blueprint/06-architecture.md`. Read all Phase 1–5 files, especially `01-01-problem-validation.md`, `01-04-founder-market-fit.md`, `03-01-competitive-landscape.md`, and `05-07-business-model-canvas.md`.
 
 ## Output structure
 

@@ -19,7 +19,7 @@
 
 ## ⚡ The 30-second version
 
-Type one line in Claude Code. Get back nine markdown files in your project folder. Real research, real architecture, real Claude Code ready build prompts. Two minutes. No browser. No signup. No API key.
+Type one line in Claude Code. Get back 34 markdown artifacts plus a generated React + Vite review dashboard with charts, all in your project folder. Real research, real architecture, real Claude Code ready build prompts. No browser round-trip required. No signup. No API key.
 
 ```bash
 $ /planmysaas "AI tutor for JEE students, voice-first, ₹99/month"
@@ -27,14 +27,17 @@ $ /planmysaas "AI tutor for JEE students, voice-first, ₹99/month"
 ✓ Blueprint generated for: AI tutor for JEE students…
 
   ./planmysaas-blueprint/
-  ├── 01-idea.md            ← Refined idea + audience + business model
-  ├── 02-research.md        ← Competitors, problem clusters, opportunities
-  ├── 03-analysis.md        ← BMC, SWOT, PMF score, risk matrix
-  ├── 04-architecture.md    ← Services, data models, API surface
-  ├── 05-features.md        ← Feature specs with user flows
-  ├── 06-frontend.md        ← Routes, wireframes, component tree
-  ├── 07-phases.md          ← Release plan + milestones
-  ├── 08-build-playbook.md  ← Decision-grade build steps with rubrics, leaf to root
+  ├── Phase 1 · Problem & Customer        (5)   problem-validation · customer-personas · jobs-to-be-done · founder-market-fit · customer-interview-plan
+  ├── Phase 2 · Market                    (4)   tam-sam-som · why-now · demand-signals · analogies-post-mortems
+  ├── Phase 3 · Competition               (3)   competitive-landscape · switching-costs · brand-naming
+  ├── Phase 4 · Economics                 (4)   willingness-to-pay · unit-economics · distribution-channels · content-seo-landscape
+  ├── Phase 5 · Risk, Legal & Synthesis  (13)   legal-regulatory · founder-side-legal · tech-stack-lock-in · talent-hiring · swot · porters-five-forces · business-model-canvas · risk-register · validation-experiments · pmf-score · the-roast · executive-summary · research-synthesis
+  ├── 06-architecture.md    ← Services, data models, API surface
+  ├── 07-features.md        ← Feature specs with user flows
+  ├── 08-frontend.md        ← Routes, wireframes, component tree
+  ├── 09-release-plan.md    ← Release plan + milestones
+  ├── 10-build-playbook.md  ← Decision-grade build steps with rubrics, leaf to root
+  ├── dashboard/            ← React + Vite + Recharts review site — npm install && npm run dev
   └── README.md             ← Index of everything
 ```
 
@@ -74,25 +77,25 @@ The skill writes a fresh `./planmysaas-blueprint/` folder in your current projec
 
 ## 📁 See what you get back
 
-Each file in `./planmysaas-blueprint/` is a deep, structured document written for **engineers and founders, not for marketers**. Below are screenshots from the [PlanMySaaS dashboard](https://planmysaas.com) showing what each section looks like when rendered visually. The skill outputs the same data as markdown.
+Each file in `./planmysaas-blueprint/` is a deep, structured document written for **engineers and founders, not for marketers**. Below are screenshots from the [PlanMySaaS dashboard](https://planmysaas.com) showing what the equivalent sections look like when rendered visually. The skill outputs the same data as markdown, split into 29 individually-tracked artifacts plus a locally-generated review dashboard with its own charts (see [🖥️ The review dashboard](#️-the-review-dashboard) below).
 
-### `02-research.md` — Real competitor analysis with opportunity scoring
+### `03-01-competitive-landscape.md` — Real competitor analysis with opportunity scoring
 
 <img src="./assets/02-research-competitors.png" alt="Robopandit competitor analysis with bar chart and table" />
 
-5–8 real competitors, classified into direct / adjacent / substitute / manual-alternative. Each gets an opportunity score from 1–10 based on workflow overlap, weakness exploitability, and differentiation room. Plus problem clusters, market gaps, insights, and a strategic direction with the recommended wedge.
+5–8 real competitors, classified into direct / adjacent / substitute / manual-alternative. Each gets an opportunity score from 1–10 based on workflow overlap, weakness exploitability, and differentiation room. Paired with `03-02-switching-costs.md` (friction in / moat out) and `03-03-brand-naming.md` (name, tagline, voice).
 
 ---
 
-### `03-analysis.md` — Business model canvas, SWOT, PMF score, risk matrix
+### `05-07-business-model-canvas.md`, `05-05-swot.md`, `05-10-pmf-score.md` — frameworks, scored
 
 <img src="./assets/03-analysis-bmc.png" alt="Robopandit business model canvas — 9 blocks: value propositions, customer segments, channels, revenue streams, key resources, customer relationships" />
 
-The full 9-block business model canvas, plus directional TAM/SAM/SOM, Porter's 5 forces, SWOT, competitive positioning, a 7-row risk matrix, a 6-dimension PMF score breakdown, and a phased strategic recommendation list.
+The full 9-block business model canvas, directional TAM/SAM/SOM (`02-01-tam-sam-som.md`), Porter's 5 forces, evidence-grounded SWOT, a scored risk register (`05-08-risk-register.md`), a 6-dimension PMF score breakdown, and an adversarial gut-check (`05-11-the-roast.md`) that refuses to soften into encouragement.
 
 ---
 
-### `04-architecture.md` — System design with services, data models, APIs
+### `06-architecture.md` — System design with services, data models, APIs
 
 <img src="./assets/04-architecture-canvas.png" alt="Robopandit visual canvas showing 29 services across modules, services, stores, and external integrations" />
 
@@ -100,7 +103,7 @@ The full 9-block business model canvas, plus directional TAM/SAM/SOM, Porter's 5
 
 ---
 
-### `05-features.md` — Feature specs with user flows + acceptance criteria
+### `07-features.md` — Feature specs with user flows + acceptance criteria
 
 <img src="./assets/05-feature-specs.png" alt="Robopandit feature specs page showing 15 features across 9 modules with workflow coverage chart" />
 
@@ -108,7 +111,7 @@ The full 9-block business model canvas, plus directional TAM/SAM/SOM, Porter's 5
 
 ---
 
-### `08-build-playbook.md` — Deep build steps with rubrics, leaf to root
+### `10-build-playbook.md` — Deep build steps with rubrics, leaf to root
 
 The most important artifact in the blueprint. Not a paste-ready prompt list — a decision-grade build playbook structured as a **dependency tree**: foundation primitives first (repo, deploy pipeline, data layer), then services, then features in priority order, then polish, then ship. Every step includes:
 
@@ -122,7 +125,7 @@ The user (or their AI coding tool) follows it step-by-step. Each step's rubric m
 
 ---
 
-### `06-frontend.md` — Routes, wireframes, component tree, design system
+### `08-frontend.md` — Routes, wireframes, component tree, design system
 
 <img src="./assets/06-frontend-blueprint.png" alt="Robopandit frontend blueprint showing routes and design system" />
 
@@ -130,11 +133,11 @@ Routes grouped by public/app/admin sections, page specs for the top 8 routes, AS
 
 ---
 
-### Final → Everything in one Artifact Hub view
+### 🖥️ The review dashboard
 
-<img src="./assets/00-artifact-hub.png" alt="Artifact hub showing 26 artifacts at 88% complete, organized by category" />
+<img src="./assets/00-artifact-hub.png" alt="Artifact hub showing artifacts organized by category with completion tracking" />
 
-In the [dashboard](https://planmysaas.com), all sections land in an Artifact Hub view (above) with completion tracking, version history, and exports. The skill ships the same content as portable markdown — no lock-in.
+The skill's last stage scaffolds a real **React + Vite + Recharts** site into `./planmysaas-blueprint/dashboard/` — a local, dark-themed equivalent of the dashboard view above: phase progress, a PMF radar chart, competitor opportunity-score bars, a risk matrix scatter plot, TAM/SAM/SOM sizing, unit-economics bars, a SWOT quadrant, Porter's Five Forces, the full Business Model Canvas grid, feature-priority mix, and the release timeline. `cd planmysaas-blueprint/dashboard && npm run dev` and it's running locally — no account, no upload, your data never leaves your machine.
 
 ---
 
@@ -146,11 +149,12 @@ The skill and the [PlanMySaaS dashboard](https://planmysaas.com) are not competi
 
 | Capability | This Skill | [planmysaas.com](https://planmysaas.com) |
 |---|:---:|:---:|
-| Top-level stages generated | 8 | **30+** |
-| Total generated pages / artifacts | 9 markdown files | **26+ artifacts across 8 categories** |
+| Top-level stages generated | 34 (5 research phases + 5 build stages) | **30+** |
+| Total generated pages / artifacts | 34 markdown files + a generated dashboard | **26+ artifacts across 8 categories** |
+| Review dashboard | ✓ local React + Vite + Recharts site, generated per project | ✓ hosted, always up to date |
 | Sub-views per stage | inline sections | **multi-tab pages** (Research = 8 tabs, Analysis = 9, Architecture = 6, Phases = 9 …) |
-| Sidebar workflow groups | — | **7 groups** — Command · Research · Planning · Frameworks · Output · Evolution · Tools |
-| Inline charts (recharts) | — | ✓ bars, canvas, score dials |
+| Sidebar workflow groups | 6 phase groups | **7 groups** — Command · Research · Planning · Frameworks · Output · Evolution · Tools |
+| Inline charts | ✓ recharts — PMF radar, competitor bars, risk matrix, TAM/SAM/SOM, unit economics, SWOT, Porter's, BMC, feature mix, timeline | ✓ bars, canvas, score dials |
 | Visual architecture canvas | text only | ✓ drag-able 29-node diagram |
 | Auto-research on real competitors (web search) | Claude only | ✓ deep research, 60 sub-topics |
 | **Project documentation page** | — | ✓ a single docs hub per project, auto-generated |
@@ -197,32 +201,40 @@ The skill is plain markdown. Open any file in `~/.claude/skills/planmysaas/` and
 
 ```
 ~/.claude/skills/planmysaas/
-├── SKILL.md                  ← Frontmatter + orchestration workflow
-├── README.md                 ← This file
-├── LICENSE                   ← MIT
+├── SKILL.md                          ← Frontmatter + orchestration workflow
+├── README.md                         ← This file
+├── LICENSE                           ← MIT
 ├── pipeline/
-│   ├── 01-idea-refine.md     ← Stage 1 prompt
-│   ├── 02-research.md        ← Stage 2 prompt
-│   ├── 03-analysis.md        ← Stage 3 prompt
-│   ├── 04-architecture.md    ← Stage 4 prompt
-│   ├── 05-features.md        ← Stage 5 prompt
-│   ├── 06-frontend.md        ← Stage 6 prompt
-│   ├── 07-phases.md          ← Stage 7 prompt
-│   └── 08-build-playbook.md  ← Stage 8 prompt (the build playbook generator)
+│   ├── 01-01-problem-validation.md   ← Phase 1 · Problem & Customer (5 files)
+│   ├── ...                             01-02, 01-03, 01-04, 01-05
+│   ├── 02-01-tam-sam-som.md          ← Phase 2 · Market (4 files)
+│   ├── 03-01-competitive-landscape.md← Phase 3 · Competition (3 files)
+│   ├── 04-01-willingness-to-pay.md   ← Phase 4 · Economics (4 files)
+│   ├── 05-01-legal-regulatory.md     ← Phase 5 · Risk, Legal & Synthesis (13 files)
+│   ├── 06-architecture.md            ← Stage 6 prompt
+│   ├── 07-features.md                ← Stage 7 prompt
+│   ├── 08-frontend.md                ← Stage 8 prompt
+│   ├── 09-release-plan.md            ← Stage 9 prompt
+│   ├── 10-build-playbook.md          ← Stage 10 prompt (the build playbook generator)
+│   └── 11-dashboard.md               ← Stage 11 — scaffolds + populates the dashboard
 ├── templates/
-│   ├── blueprint-readme.md   ← Final README template
-└── assets/                   ← README screenshots
+│   ├── blueprint-readme.md           ← Final README template
+│   └── dashboard/                    ← The React + Vite + Recharts dashboard app (copied, not regenerated)
+└── assets/                           ← README screenshots
 ```
+
+29 files live directly under `pipeline/` (flat, sorted by filename — no subfolders) for phases 1–5; see the pipeline table in `SKILL.md` for the full list.
 
 Common tweaks:
 
-- **Change default tech stack** — edit `pipeline/04-architecture.md`. Replace Next.js / Postgres / Vercel with your preferred defaults.
-- **Add a stage** — drop a new file like `pipeline/09-marketing.md`, then add it to the pipeline table in `SKILL.md`.
+- **Change default tech stack** — edit `pipeline/06-architecture.md`. Replace Next.js / Postgres / Vercel with your preferred defaults.
+- **Add a stage** — drop a new file like `pipeline/12-marketing.md`, then add it to the pipeline table in `SKILL.md`.
 - **Tighten the tone** — every prompt has a *Tone* section at the bottom. Rewrite it.
 - **Change the output folder** — search `./planmysaas-blueprint/` in `SKILL.md` and replace.
+- **Restyle the dashboard** — edit components under `templates/dashboard/src/`; it's a normal Vite + React + Tailwind + Recharts app, run `npm run dev` inside it directly to iterate.
 - **Localise** — add Hindi / Spanish / French versions of any prompt; Claude will follow the language you ask in.
 
-No build step. No package.json. No deploy. Save the file, run `/planmysaas` again, the next invocation uses the new prompt.
+No build step for the markdown pipeline itself. The dashboard has its own `package.json` (installed at generation time, not when you install the skill). Save a prompt file, run `/planmysaas` again, the next invocation uses the new prompt.
 
 ---
 
@@ -230,8 +242,8 @@ No build step. No package.json. No deploy. Save the file, run `/planmysaas` agai
 
 | When | What |
 |---|---|
-| **Now (v1.0)** | 8-stage prompt-based pipeline · MIT · auto-discovery · markdown output |
-| **Next 2 weeks** | Optional `auth.md` for API mode — connect a PlanMySaaS API key to save the project to your dashboard with charts, version history, and exports |
+| **Now (v2.0)** | 34-artifact phase-based pipeline · generated React + Vite + Recharts review dashboard · MIT · auto-discovery · markdown output |
+| **Next 2 weeks** | Optional `auth.md` for API mode — connect a PlanMySaaS API key to save the project to your dashboard with version history, team collaboration, and exports |
 | **Q3 2026** | Skill variants — `/planmysaas-mvp` (faster 4-stage cut), `/planmysaas-validate` (idea validation only), `/planmysaas-redesign` (replan an existing product) |
 | **Q3 2026** | MCP server — same engine over Model Context Protocol so it works in any MCP-compatible client (Cursor, Cline, Continue) |
 | **Q4 2026** | Localisation — Hindi / Hinglish prompts for Indian founders |

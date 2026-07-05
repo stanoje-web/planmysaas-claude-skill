@@ -1,6 +1,6 @@
-# Stage 5 — Feature specifications
+# Stage 7 — Feature specifications
 
-Generate `./planmysaas-blueprint/05-features.md`. Read prior stages.
+Generate `./planmysaas-blueprint/07-features.md`. Read `06-architecture.md` and the Phase 1–5 files, especially `01-03-jobs-to-be-done.md` and `03-01-competitive-landscape.md`.
 
 ## Output structure
 

@@ -1,8 +1,8 @@
-# Stage 8 — Build playbook (the most important artifact)
+# Stage 10 — Build playbook (the most important artifact)
 
-Generate `./planmysaas-blueprint/08-build-playbook.md`. This is **not** a list of paste-ready prompts. It is a deep, decision-grade build instruction set — the kind a staff engineer would write for a junior team. The user (or their AI coding tool, or a future contractor) will follow this step-by-step to ship the product.
+Generate `./planmysaas-blueprint/10-build-playbook.md`. This is **not** a list of paste-ready prompts. It is a deep, decision-grade build instruction set — the kind a staff engineer would write for a junior team. The user (or their AI coding tool, or a future contractor) will follow this step-by-step to ship the product.
 
-Read every prior stage (01–07) before generating. Cross-reference the actual entity names, feature IDs, route paths, tech stack, and wedge from earlier files. A generic playbook is a failed playbook.
+Read every prior stage (all 29 Phase 1–5 files plus `06-architecture.md`, `07-features.md`, `08-frontend.md`, `09-release-plan.md`) before generating. Cross-reference the actual entity names, feature IDs, route paths, tech stack, and wedge from earlier files. A generic playbook is a failed playbook.
 
 ## Required output structure
 
@@ -31,7 +31,7 @@ Use this exact skeleton for the output file. Do not deviate — consistency is w
    └─ 02 Data layer (Prisma schema)
         └─ 03 Service layer + repositories
              └─ 04 Auth + permissions
-                  └─ 05 Core feature P0-1 (<F-XX from stage 05>)
+                  └─ 05 Core feature P0-1 (<F-XX from 07-features.md>)
                        └─ 06 Core feature P0-2 (<F-XX>)
                             └─ 07 Core feature P0-3 (<F-XX>)
                                  └─ 08 Payments + billing
@@ -64,7 +64,7 @@ Use this exact skeleton for the output file. Do not deviate — consistency is w
 **Files to create:**
 [Tree-style list with one-line purpose per file]
 
-**Tech decisions** (locked from blueprint stage 04 — do not re-litigate):
+**Tech decisions** (locked from `06-architecture.md` — do not re-litigate):
 [Bulleted: tech choice — reason. 4–6 items.]
 
 **Patterns (mandatory across the codebase):**
@@ -89,7 +89,7 @@ Use this exact skeleton for the output file. Do not deviate — consistency is w
 
 ## Build Step 02 — Data layer
 
-[Same skeleton — every section filled with project-specific detail referencing entities from blueprint stage 04.]
+[Same skeleton — every section filled with project-specific detail referencing entities from `06-architecture.md`.]
 
 ---
 
@@ -119,7 +119,7 @@ Use this exact skeleton for the output file. Do not deviate — consistency is w
 
 1. **Step count: 9–12.** Less means under-spec'd; more means death by a thousand cuts.
 
-2. **Always reference blueprint stages by name and ID.** "Build feature F-01 from stage 05" — never just "build the first feature". The cross-references are what make the playbook decision-grade.
+2. **Always reference blueprint stages by name and ID.** "Build feature F-01 from `07-features.md`" — never just "build the first feature". The cross-references are what make the playbook decision-grade.
 
 3. **Acceptance rubrics must be observable.** Every checkbox is something a human can verify in under 60 seconds. No "code is clean", no "performance is good". Yes "Lighthouse perf ≥ 90 on /pricing" or "User can sign up → confirm email → log in within 2 minutes end-to-end".
 
@@ -129,7 +129,7 @@ Use this exact skeleton for the output file. Do not deviate — consistency is w
 
 6. **Stop-and-review gates must be active verifications.** Concrete steps the user runs (commands, clicks, observations) — not "make sure it works".
 
-7. **Tech choices are locked.** The tech stack from stage 04 is the source of truth. Do not propose alternatives in this playbook. If the user wants to change the stack, they go back to stage 04 and re-run that.
+7. **Tech choices are locked.** The tech stack from `06-architecture.md` is the source of truth. Do not propose alternatives in this playbook. If the user wants to change the stack, they go back to `06-architecture.md` and re-run that.
 
 8. **Tone: senior engineer briefing a team.** Direct, specific, no marketing language, no emoji-heavy enthusiasm. The emoji headers (🎯 📍 etc.) are the only emoji — they signal section type, not energy.
 
@@ -141,10 +141,10 @@ Use this exact skeleton for the output file. Do not deviate — consistency is w
 
 When the playbook references prior stages, use these exact patterns:
 
-- "From blueprint stage 01 — your wedge is <wedge>"
-- "From blueprint stage 04 — service `<Service Name>` owns <entities>"
-- "From blueprint stage 05 — feature `F-XX <Title>` flow"
-- "From blueprint stage 06 — design system tokens (color `var(--brand)`, spacing scale 4/8/12/16/24)"
+- "From `01-01-problem-validation.md` — your wedge is <wedge>"
+- "From `06-architecture.md` — service `<Service Name>` owns <entities>"
+- "From `07-features.md` — feature `F-XX <Title>` flow"
+- "From `08-frontend.md` — design system tokens (color `var(--brand)`, spacing scale 4/8/12/16/24)"
 
 These anchors prove the playbook is project-specific. They also let the reader jump back to context when a step is unclear.
 

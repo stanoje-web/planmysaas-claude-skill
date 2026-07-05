@@ -1,0 +1,18 @@
+{
+  "project": {
+    "name": "Your SaaS",
+    "oneLiner": "Run /planmysaas again once every stage is generated to populate this dashboard.",
+    "generatedAt": ""
+  },
+  "pmfScore": null,
+  "tamSamSom": null,
+  "competitors": [],
+  "swot": null,
+  "portersFiveForces": [],
+  "riskRegister": [],
+  "unitEconomics": null,
+  "featurePriority": [],
+  "willingnessToPay": [],
+  "buildPhases": [],
+  "businessModelCanvas": []
+}

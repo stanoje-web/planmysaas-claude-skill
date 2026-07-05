@@ -1,6 +1,6 @@
-# Stage 6 — Frontend blueprint
+# Stage 8 — Frontend blueprint
 
-Generate `./planmysaas-blueprint/06-frontend.md`. Read prior stages, especially features.
+Generate `./planmysaas-blueprint/08-frontend.md`. Read prior stages, especially `07-features.md` and `06-architecture.md`.
 
 ## Output structure
 

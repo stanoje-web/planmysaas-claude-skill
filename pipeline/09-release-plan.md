@@ -1,6 +1,6 @@
-# Stage 7 — Phases + release plan
+# Stage 9 — Phases + release plan
 
-Generate `./planmysaas-blueprint/07-phases.md`. Read prior stages.
+Generate `./planmysaas-blueprint/09-release-plan.md`. Read `06-architecture.md`, `07-features.md`, `05-08-risk-register.md`, and `05-12-executive-summary.md`.
 
 ## Output structure
 
@@ -8,8 +8,8 @@ Generate `./planmysaas-blueprint/07-phases.md`. Read prior stages.
 # Phases + release plan — <Project name>
 
 ## Total scope summary
-- Total features: <from stage 5>
-- Total services: <from stage 4>
+- Total features: <from 07-features.md>
+- Total services: <from 06-architecture.md>
 - Estimated MVP timeline: <X weeks>
 - Estimated v1.0 timeline: <Y weeks>
 - Estimated team: <Z people>
@@ -32,7 +32,7 @@ Goal: codebase ready, deploy pipeline working, no users yet.
 
 Goal: ship the smallest thing that delivers the core promise. Ship to 10 friendly users.
 
-**Features (from stage 5):**
+**Features (from 07-features.md):**
 - F-01, F-02, F-04, F-07, F-12 (whichever P0s map to the wedge)
 
 **Tasks broken down:**
@@ -90,7 +90,7 @@ Goal: $20k+ MRR, hire first engineer.
 - Admin v2 (audit logs, role granularity)
 - Performance optimization (DB indexes, caching, CDN)
 
-## Risk register (from stage 3)
+## Risk register (from 05-08-risk-register.md)
 
 Re-list top 5 risks with phase-aware mitigation.
 
@@ -123,7 +123,7 @@ Record initial trade-offs so future-you remembers why.
 - Estimates must be **honest** — most solo founders overestimate by 2-3x. Use historical solo-founder benchmarks: MVP = 4-6 weeks, not 2.
 - Each phase has a **single goal sentence**, not a list of goals.
 - Exit criteria must be **observable** — "users sign up" not "great UX".
-- Risks reference stage 3 to stay grounded.
+- Risks reference `05-08-risk-register.md` to stay grounded.
 
 ## Tone
 
